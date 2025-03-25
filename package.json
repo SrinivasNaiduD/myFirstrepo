@@ -1,0 +1,35 @@
+{
+  "name": "crud-node-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg . --output myapp",
+    "start": "nodemon app.js"
+  },
+  "pkg": {
+    "scripts": "app.js",
+    "targets": [
+      "node18-linux-x64"
+    ],
+    "assets": [
+      "public/**/*"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "crypto": "^1.0.1",
+    "express": "^4.16.0",
+    "ioredis": "^5.4.2",
+    "mongoose": "^6.7.2",
+    "razorpay": "^2.9.4",
+    "shortid": "^2.2.16"
+  },
+  "bin": {
+    "dummy-command": "app.js"
+  }
+}
